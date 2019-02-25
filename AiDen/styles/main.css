@@ -1,0 +1,41 @@
+/*
+
+AiDen
+By Typer
+This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+
+*/
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+.label {
+    color: white;
+}
+
+#log {
+    display: flex;
+}
+
+#left {
+    padding-right: 10px;
+}
+
+#right {
+    padding-left: 10px;
+}
+
+.new {
+    color: lawngreen;
+    font-weight: bold;
+    background-color: dimgrey
+}
+
+#ai {
+    color: darkorange;
+}
