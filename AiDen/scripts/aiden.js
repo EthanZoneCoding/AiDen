@@ -59,7 +59,7 @@ function processAI() {
                 document.getElementById("output").innerHTML = "Coming soon.";
             } else if(outrandom === 2) {
                 //response 2
-                document.getElementById("output").innerHTML = "Sorry, I cant do that. Do it later.";
+                document.getElementById("output").innerHTML = "Sorry, I cant do that. Try it later.";
             } else {
                 //response 3
                 document.getElementById("output").innerHTML = "I can do that soon.";
