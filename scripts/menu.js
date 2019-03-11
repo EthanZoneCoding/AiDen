@@ -20,5 +20,5 @@ function share() {
 function report() {
 
     //open github
-    window.open("https://github.com/EthanZoneCoding/AiDen/issues");
+    window.open("https://github.com/EthanZoneCoding/AiDen/issues/new");
 }
