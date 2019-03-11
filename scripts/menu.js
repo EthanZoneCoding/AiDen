@@ -14,7 +14,7 @@ function share() {
     page = window.open("about:blank");
 
     //rewrite page
-    page.document.write("<div style='background-color: black; height: 100%;'><h1><span style='color: orange;'>Ai</span><span style='color: grey;'>Den</span></h1><p style='color: teal;'>Thank you for sharing.</p><a href='ethanzonecoding.github.io/AiDen/AiDen' style='color: green;'>ethanzonecoding.github.io/AiDen/AiDen</a><br><br><button onclick='print();'>Print</button></div>");
+    page.document.write("<div style='background-color: black; height: 100%;'><h1><span style='color: orange;'>Ai</span><span style='color: grey;'>Den</span></h1><p style='color: teal;'>Thank you for sharing.</p><a href='ethanzonecoding.github.io/AiDen/AiDen' style='color: green;'>ethanzonecoding.github.io/AiDen/</a><br><br><button onclick='print();'>Print</button></div>");
 }
 
 function report() {
