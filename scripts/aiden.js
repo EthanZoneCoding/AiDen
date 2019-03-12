@@ -18,7 +18,7 @@ var go = ["bye", "goodbye", "later", "see"];
 var inputlist = [];
 var word = "";
 var normalList = "1";
-var inputChar, letter, lowered, length, input, type, outrandom, encode, list, cap, comma, Http, url, data;
+var inputChar, letter, lowered, length, input, type, outrandom, encode, list;
 var url = "";
 var name = "User";
 var caps = [];
@@ -90,18 +90,9 @@ function processAI() {
                 url += " " + inputlist[list];
             }
             //encode
-            encode = encodeURI(url)
+            encode = encodeURI(url);
             
-            //define using api
-            Http = new XMLHttpRequest();
-            url = 'https://od-api.oxforddictionaries.com:443/api/v1/entries/en/' + encode.toLowerCase()
-            Http.open("GET", url);
-            Http.onload = function () {
-                data = JSON.parse(this.response);
-                alert(data);
-                
-            }
-            Http.send();
+            window.open("https://www.dictionary.com/browse/" + url);
             
             
         } else if(come.includes(type)){
