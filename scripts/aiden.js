@@ -11,14 +11,14 @@ var query = ["what", "which", "how", "who", "why", "is", "can"];
 var webcommand = ["open", "pull up", "load", "go", "show", "look", "search", "google"];
 var def = ["define", "meaning", "definition"];
 var come = ["hi", "hello", "howdy", "yo"];
-var machine = ["aiden", "you", "your"];
+var machine = ["aiden", "you", "your", "you're"];
 var go = ["bye", "goodbye", "later", "see"];
 
 //other variables
 var inputlist = [];
 var word = "";
 var normalList = "1";
-var inputChar, letter, lowered, length, input, type, outrandom, encode, list, cap, comma;
+var inputChar, letter, lowered, length, input, type, outrandom, encode, list, cap, comma, Http, url, data;
 var url = "";
 var name = "User";
 var caps = [];
@@ -92,8 +92,17 @@ function processAI() {
             //encode
             encode = encodeURI(url)
             
-            //define
-            window.open("https://www.dictionary.com/browse/" + encode);
+            //define using api
+            Http = new XMLHttpRequest();
+            url = 'https://od-api.oxforddictionaries.com:443/api/v1/entries/en/' + encode.toLowerCase()
+            Http.open("GET", url);
+            Http.onload = function () {
+                data = JSON.parse(this.response);
+                alert(data);
+                
+            }
+            Http.send();
+            
             
         } else if(come.includes(type)){
                   
